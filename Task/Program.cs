@@ -1,4 +1,8 @@
-﻿string[] MakeArray()
+﻿string[] wordArray = MakeArray();
+Console.WriteLine();
+Console.WriteLine(PrintArray(wordArray) + " -> " + PrintArray(SortArray(wordArray)));
+
+string[] MakeArray()
 {
     int n = 0;
     string[] arr = new string[n];
