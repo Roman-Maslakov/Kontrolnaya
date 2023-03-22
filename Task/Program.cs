@@ -21,3 +21,25 @@
     }
     return arr;
 }
+
+string PrintArray(string[] array)
+{
+    string result = String.Join(", ", array);
+    return("[" + result + "]");
+}
+
+string[] SortArray(string[] arr2)
+{
+    int k = 0;
+    string[] sortedArr = new string[k];
+    for (int i = 0; i < arr2.Length; i++)
+    {
+        if (arr2[i].Length < 4) 
+        {
+            Array.Resize(ref sortedArr, k + 1);
+            sortedArr[k] = arr2[i];
+            k++;
+        }
+    }
+    return sortedArr;
+}
