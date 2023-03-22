@@ -1,6 +1,6 @@
 ﻿string[] wordArray = MakeArray();
 Console.WriteLine();
-Console.WriteLine(PrintArray(wordArray) + " -> " + PrintArray(SortArray(wordArray)));
+Console.WriteLine(ConvertArray(wordArray) + " -> " + ConvertArray(SortArray(wordArray)));
 
 string[] MakeArray()
 {
@@ -26,7 +26,7 @@ string[] MakeArray()
     return arr;
 }
 
-string PrintArray(string[] array)
+string ConvertArray(string[] array)
 {
     string result = String.Join(", ", array);
     return("[" + result + "]");
